@@ -32,7 +32,7 @@ def compare_snapshot(fixture: Path, expected: Path) -> List[str]:
         return errors
 
     proc = subprocess.run(
-        ["python3", str(ROOT / "parse_px.py"), str(fixture)],
+        ["python3", str(ROOT / "parse_xs.py"), str(fixture)],
         capture_output=True,
         text=True,
     )

@@ -478,7 +478,7 @@ def parse_header(line: str, line_no: int, diagnostics: List[Dict[str, Any]]) -> 
 
 def main() -> None:
     if len(sys.argv) < 2:
-        print("Usage: parse_px.py <file.xs>", file=sys.stderr)
+        print("Usage: parse_xs.py <file.xs>", file=sys.stderr)
         sys.exit(1)
     path = sys.argv[1]
     with open(path, encoding="utf-8") as f:
