@@ -1,0 +1,177 @@
+{
+  "type": "Document",
+  "header": {
+    "type": "Header",
+    "tag": "SPEC",
+    "text": "Table Fence Violation",
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 1
+      },
+      "end": {
+        "line": 1,
+        "column": 28
+      }
+    }
+  },
+  "metadata": [],
+  "body": [
+    {
+      "type": "Section",
+      "number": [
+        1
+      ],
+      "title": "TABLE WITH FENCE",
+      "body": [
+        {
+          "type": "Table",
+          "header": {
+            "type": "TableRow",
+            "cells": [
+              "Col A",
+              "Col B"
+            ],
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 1
+              },
+              "end": {
+                "line": 4,
+                "column": 18
+              }
+            }
+          },
+          "rows": [
+            {
+              "type": "TableRow",
+              "cells": [
+                "```js",
+                "bad"
+              ],
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 1
+                },
+                "end": {
+                  "line": 6,
+                  "column": 18
+                }
+              }
+            },
+            {
+              "type": "TableRow",
+              "cells": [
+                "code",
+                "here"
+              ],
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 1
+                },
+                "end": {
+                  "line": 7,
+                  "column": 18
+                }
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 1
+            },
+            "end": {
+              "line": 7,
+              "column": 18
+            }
+          },
+          "align": {
+            "type": "TableRow",
+            "cells": [
+              "-----",
+              "-----"
+            ],
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 1
+              },
+              "end": {
+                "line": 5,
+                "column": 18
+              }
+            }
+          }
+        },
+        {
+          "type": "Paragraph",
+          "inline": [
+            {
+              "type": "Text",
+              "value": "Paragraph after table for termination check.",
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 1
+                },
+                "end": {
+                  "line": 9,
+                  "column": 45
+                }
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 1
+            },
+            "end": {
+              "line": 9,
+              "column": 45
+            }
+          }
+        }
+      ],
+      "level": 1,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 1
+        },
+        "end": {
+          "line": 3,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": "BlankLine",
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 1
+        },
+        "end": {
+          "line": 8,
+          "column": 1
+        }
+      }
+    }
+  ],
+  "diagnostics": [
+    {
+      "severity": "error",
+      "message": "Fenced code block delimiter inside table is not allowed.",
+      "code": "FENCE_IN_TABLE",
+      "loc": {
+        "line": 6,
+        "column": 3
+      }
+    }
+  ]
+}

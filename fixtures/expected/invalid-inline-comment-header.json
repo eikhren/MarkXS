@@ -1,0 +1,81 @@
+{
+  "type": "Document",
+  "header": {
+    "type": "Header",
+    "tag": "SPEC",
+    "text": "Bad Header",
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 1
+      },
+      "end": {
+        "line": 1,
+        "column": 17
+      }
+    }
+  },
+  "metadata": [],
+  "body": [
+    {
+      "type": "Section",
+      "number": [
+        1
+      ],
+      "title": "BODY",
+      "body": [
+        {
+          "type": "Paragraph",
+          "inline": [
+            {
+              "type": "Text",
+              "value": "This file is otherwise minimal; the header violation should be detected.",
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 1
+                },
+                "end": {
+                  "line": 4,
+                  "column": 73
+                }
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 1
+            },
+            "end": {
+              "line": 4,
+              "column": 73
+            }
+          }
+        }
+      ],
+      "level": 1,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 1
+        },
+        "end": {
+          "line": 3,
+          "column": 8
+        }
+      }
+    }
+  ],
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "message": "Inline comment not allowed in this context; stripped before parsing.",
+      "loc": {
+        "line": 1,
+        "column": 18
+      },
+      "code": "INLINE_COMMENT_ILLEGAL"
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+{
+  "type": "Document",
+  "header": {
+    "type": "Header",
+    "tag": "SPEC",
+    "text": "MarkXS Validator Fixture",
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 1
+      },
+      "end": {
+        "line": 1,
+        "column": 31
+      }
+    }
+  },
+  "metadata": [
+    {
+      "type": "MetadataEntry",
+      "key": "Title",
+      "value": "Basic Valid Sample",
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 1
+        },
+        "end": {
+          "line": 2,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": "MetadataEntry",
+      "key": "Version",
+      "value": "2.0",
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 1
+        },
+        "end": {
+          "line": 3,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": "MetadataEntry",
+      "key": "Study ID",
+      "value": "MXS-VAL-001",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 1
+        },
+        "end": {
+          "line": 4,
+          "column": 22
+        }
+      }
+    }
+  ],
+  "body": [
+    {
+      "type": "Section",
+      "number": [
+        1
+      ],
+      "title": "INTRODUCTION",
+      "body": [
+        {
+          "type": "Paragraph",
+          "inline": [
+            {
+              "type": "Text",
+              "value": "This paragraph includes a label ",
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 1
+                },
+                "end": {
+                  "line": 7,
+                  "column": 33
+                }
+              }
+            },
+            {
+              "type": "InlineLabel",
+              "identifier": "Note",
+              "text": " inline guidance and an allowed inline comment ",
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 33
+                },
+                "end": {
+                  "line": 7,
+                  "column": 85
+                }
+              }
+            },
+            {
+              "type": "InlineComment",
+              "text": "trailing context ignored.",
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 85
+                },
+                "end": {
+                  "line": 7,
+                  "column": 113
+                }
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 1
+            },
+            "end": {
+              "line": 7,
+              "column": 113
+            }
+          }
+        },
+        {
+          "type": "BulletList",
+          "items": [
+            {
+              "type": "BulletItem",
+              "marker": "-",
+              "inline": [
+                {
+                  "type": "Text",
+                  "value": "First bullet item with ",
+                  "loc": {
+                    "start": {
+                      "line": 9,
+                      "column": 3
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 26
+                    }
+                  }
+                },
+                {
+                  "type": "InlineLabel",
+                  "identifier": "InlineLabel",
+                  "text": " value.",
+                  "loc": {
+                    "start": {
+                      "line": 9,
+                      "column": 26
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 45
+                    }
+                  }
+                }
+              ],
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 1
+                },
+                "end": {
+                  "line": 9,
+                  "column": 45
+                }
+              }
+            },
+            {
+              "type": "BulletItem",
+              "marker": "-",
+              "inline": [
+                {
+                  "type": "Text",
+                  "value": "Second bullet item wraps into an indented continuation line.",
+                  "loc": {
+                    "start": {
+                      "line": 10,
+                      "column": 3
+                    },
+                    "end": {
+                      "line": 10,
+                      "column": 63
+                    }
+                  }
+                }
+              ],
+              "continuation": [
+                "into an indented continuation line."
+              ],
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 1
+                },
+                "end": {
+                  "line": 11,
+                  "column": 38
+                }
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 1
+            },
+            "end": {
+              "line": 11,
+              "column": 38
+            }
+          }
+        }
+      ],
+      "level": 1,
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 1
+        },
+        "end": {
+          "line": 6,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": "BlankLine",
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 1
+        },
+        "end": {
+          "line": 8,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "BlankLine",
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 1
+        },
+        "end": {
+          "line": 12,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "Section",
+      "number": [
+        2
+      ],
+      "title": "TABLES",
+      "body": [
+        {
+          "type": "Table",
+          "header": {
+            "type": "TableRow",
+            "cells": [
+              "Column A",
+              "Column B"
+            ],
+            "loc": {
+              "start": {
+                "line": 14,
+                "column": 1
+              },
+              "end": {
+                "line": 14,
+                "column": 24
+              }
+            }
+          },
+          "rows": [
+            {
+              "type": "TableRow",
+              "cells": [
+                "Cell 1",
+                "Cell 2"
+              ],
+              "loc": {
+                "start": {
+                  "line": 16,
+                  "column": 1
+                },
+                "end": {
+                  "line": 16,
+                  "column": 24
+                }
+              }
+            },
+            {
+              "type": "TableRow",
+              "cells": [
+                "Cell 3",
+                "Cell 4"
+              ],
+              "loc": {
+                "start": {
+                  "line": 17,
+                  "column": 1
+                },
+                "end": {
+                  "line": 17,
+                  "column": 24
+                }
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 1
+            },
+            "end": {
+              "line": 17,
+              "column": 24
+            }
+          },
+          "align": {
+            "type": "TableRow",
+            "cells": [
+              "--------",
+              "--------"
+            ],
+            "loc": {
+              "start": {
+                "line": 15,
+                "column": 1
+              },
+              "end": {
+                "line": 15,
+                "column": 24
+              }
+            }
+          }
+        }
+      ],
+      "level": 1,
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 1
+        },
+        "end": {
+          "line": 13,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": "BlankLine",
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 1
+        },
+        "end": {
+          "line": 18,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "Section",
+      "number": [
+        3
+      ],
+      "title": "CODE",
+      "body": [
+        {
+          "type": "FencedCodeBlock",
+          "infoString": "xs",
+          "indent": 0,
+          "content": [
+            "1. THIS IS RAW",
+            "| not a table |",
+            "- not a bullet"
+          ],
+          "loc": {
+            "start": {
+              "line": 20,
+              "column": 1
+            },
+            "end": {
+              "line": 24,
+              "column": 4
+            }
+          }
+        }
+      ],
+      "level": 1,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 1
+        },
+        "end": {
+          "line": 19,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": "BlankLine",
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 1
+        },
+        "end": {
+          "line": 25,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "Section",
+      "number": [
+        4
+      ],
+      "title": "CLOSING",
+      "body": [
+        {
+          "type": "Paragraph",
+          "inline": [
+            {
+              "type": "Text",
+              "value": "Final paragraph to confirm end-of-file handling.",
+              "loc": {
+                "start": {
+                  "line": 27,
+                  "column": 1
+                },
+                "end": {
+                  "line": 27,
+                  "column": 49
+                }
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 27,
+              "column": 1
+            },
+            "end": {
+              "line": 27,
+              "column": 49
+            }
+          }
+        }
+      ],
+      "level": 1,
+      "loc": {
+        "start": {
+          "line": 26,
+          "column": 1
+        },
+        "end": {
+          "line": 26,
+          "column": 11
+        }
+      }
+    }
+  ]
+}
